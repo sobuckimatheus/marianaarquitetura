@@ -1,0 +1,25 @@
+# ===== macOS =====
+.DS_Store
+._*
+
+# ===== dependências =====
+node_modules/
+
+# ===== mídia bruta =====
+# O site publica apenas WebP (site/img/). Nenhum vídeo: o site não usa.
+*.MOV
+*.mov
+*.mp4
+*.HEIC
+*.heic
+
+# ===== fotos originais =====
+# As pastas de projeto ficam fora do repositório: são ~250 MB de material
+# bruto. As 28 fotos que site/scripts/build-images.js usa para gerar os
+# WebP foram adicionadas explicitamente (git add -f) e seguem versionadas
+# — o git preserva arquivos já rastreados mesmo que o padrão os cubra.
+APTO ESSÊNCIA /
+APTO METAMORFOSE /
+Apto E-V /
+cobertura cura/
+office milão/

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mariana Costa Arquitetura — Arquitetura de interiores em Florianópolis</title>
+<meta name="description" content="Escritório de arquitetura e interiores em Florianópolis. Projetos arquitetônicos, interiores residenciais e comerciais, acompanhamento de obra, consultoria e ambientação.">
+<meta name="theme-color" content="#0E0D0B">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mariana Costa Arquitetura">
+<meta property="og:description" content="Arquitetura e interiores em Florianópolis. Projetos que nascem da escuta e traduzem suas necessidades em espaços com identidade.">
+<meta property="og:image" content="img/hero/hero-desktop.webp">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Mariana Costa Arquitetura",
+  "description": "Escritório de arquitetura e interiores em Florianópolis, com projetos residenciais e comerciais.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Campolino Alves, 300 — Sala 712, Capoeiras",
+    "addressLocality": "Florianópolis",
+    "addressRegion": "SC",
+    "postalCode": "88085-110",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Florianópolis e Grande Florianópolis",
+  "knowsLanguage": "pt-BR",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos arquitetônicos" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos de interiores residenciais" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos de interiores comerciais" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acompanhamento de obra" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria de interiores" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ambientação de interiores" } }
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__mark" aria-label="Mariana Costa Arquitetura — início">
+      <span class="nav__mark-name">Mariana Costa</span>
+      <span class="nav__mark-sub">Arquitetura</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#escritorio">Escritório</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="#contato" class="nav__cta">Iniciar um projeto</a>
+
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav class="drawer__links" aria-label="Navegação">
+    <a href="#projetos"><em>01</em> Projetos</a>
+    <a href="#escritorio"><em>02</em> Escritório</a>
+    <a href="#servicos"><em>03</em> Serviços</a>
+    <a href="#contato"><em>04</em> Contato</a>
+  </nav>
+  <div class="drawer__foot">
+    <p>R. Campolino Alves, 300 — Sala 712<br>Capoeiras · Florianópolis — SC</p>
+    <a href="https://wa.me/5548999999999" class="drawer__wa">WhatsApp</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__media">
+    <picture>
+      <source media="(max-width: 820px)" type="image/webp" srcset="img/hero/hero-mobile.webp" width="1366" height="2048">
+      <img src="img/hero/hero-desktop.webp" width="2048" height="1361" alt="Sala de jantar integrada de cobertura, com mesa posta, iluminação em latão e cozinha ao fundo" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="hero__scrim"></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow"><span class="rule"></span>Florianópolis · Santa Catarina</p>
+
+    <h1 class="hero__title">
+      <span class="line"><span>Interiores que</span></span>
+      <span class="line"><span><em>permanecem</em></span></span>
+      <span class="line"><span>em quem vive neles.</span></span>
+    </h1>
+
+    <p class="hero__lede">Projetos residenciais e corporativos conduzidos do primeiro croqui à última peça instalada.</p>
+
+    <div class="hero__actions">
+      <a href="#projetos" class="btn btn--light">Ver projetos</a>
+      <a href="#contato" class="btn btn--ghost">Falar com o escritório</a>
+    </div>
+  </div>
+
+  <div class="hero__meta">
+    <span>Cobertura Cura</span>
+    <span class="dot"></span>
+    <span>Residencial · 2024</span>
+  </div>
+
+  <a href="#manifesto" class="hero__scroll" aria-label="Rolar para o próximo bloco">
+    <span class="hero__scroll-line"></span>
+  </a>
+</section>
+
+<!-- ============ MANIFESTO ============ -->
+<section class="manifesto" id="manifesto">
+  <div class="wrap">
+    <p class="eyebrow"><span class="rule"></span>O escritório</p>
+    <p class="manifesto__text" data-reveal>
+      Um bom interior não se anuncia. Ele <em>acomoda</em> — a luz da tarde que entra pelo oeste,
+      o jantar que vira conversa longa, o canto onde alguém sempre senta.
+      Projetamos a partir de como a casa é usada, não de como ela fotografa.
+    </p>
+    <div class="manifesto__sign" data-reveal>
+      <span class="manifesto__sign-name">Mariana Costa</span>
+      <span class="manifesto__sign-role">Arquiteta e urbanista · CAU A000000-0</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NÚMEROS / FAIXA ============ -->
+<section class="strip">
+  <div class="wrap strip__grid">
+    <div class="strip__item" data-reveal>
+      <span class="strip__n">12</span>
+      <span class="strip__l">anos de atuação</span>
+    </div>
+    <div class="strip__item" data-reveal>
+      <span class="strip__n">80+</span>
+      <span class="strip__l">projetos entregues</span>
+    </div>
+    <div class="strip__item" data-reveal>
+      <span class="strip__n">4.200</span>
+      <span class="strip__l">m² projetados</span>
+    </div>
+    <div class="strip__item" data-reveal>
+      <span class="strip__n">SC</span>
+      <span class="strip__l">Floripa e litoral</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETOS ============ -->
+<section class="projects" id="projetos">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow"><span class="rule"></span>Seleção de projetos</p>
+      <h2 class="sec-title">Obras entregues</h2>
+      <p class="sec-sub">Quatro projetos, do apartamento compacto à cobertura.
+      Toque em um deles para ver a galeria completa.</p>
+    </header>
+  </div>
+
+  <!-- faixa de capas -->
+  <div class="reel" id="reel">
+    <ul class="reel__track" role="list">
+
+      <li class="reel__item" data-project="cura">
+        <button class="reel__btn" type="button"
+                aria-label="Abrir galeria do projeto Cobertura Cura — 8 fotos">
+          <img src="img/capas/cura.webp" width="1200" height="1600"
+               alt="Estar da Cobertura Cura com poltronas escultóricas e painel vazado em latão"
+               loading="lazy" decoding="async">
+          <span class="reel__scrim"></span>
+          <span class="reel__card">
+            <span class="reel__idx">01</span>
+            <span class="reel__name">Cobertura Cura</span>
+            <span class="reel__desc">Três ambientes sociais reunidos num eixo contínuo,
+            com latão conduzindo o olho de uma ponta à outra.</span>
+            <span class="reel__spec">Residencial · 310 m² · 2024</span>
+            <span class="reel__more">Ver galeria</span>
+          </span>
+        </button>
+      </li>
+
+      <li class="reel__item" data-project="essencia">
+        <button class="reel__btn" type="button"
+                aria-label="Abrir galeria do projeto Apto Essência — 8 fotos">
+          <img src="img/capas/essencia.webp" width="1200" height="1600"
+               alt="Corredor do Apto Essência em enfiada até o estar, com espelho de parede inteira"
+               loading="lazy" decoding="async">
+          <span class="reel__scrim"></span>
+          <span class="reel__card">
+            <span class="reel__idx">02</span>
+            <span class="reel__name">Apto Essência</span>
+            <span class="reel__desc">Planta estreita e comprida resolvida com o corredor
+            tratado como galeria e um único acento de verde.</span>
+            <span class="reel__spec">Residencial · 142 m² · 2024</span>
+            <span class="reel__more">Ver galeria</span>
+          </span>
+        </button>
+      </li>
+
+      <li class="reel__item" data-project="milao">
+        <button class="reel__btn" type="button"
+                aria-label="Abrir galeria do projeto Office Milão — 4 fotos">
+          <img src="img/capas/milao.webp" width="1200" height="1600"
+               alt="Escritório Office Milão com brise de madeira e estante iluminada"
+               loading="lazy" decoding="async">
+          <span class="reel__scrim"></span>
+          <span class="reel__card">
+            <span class="reel__idx">03</span>
+            <span class="reel__name">Office Milão</span>
+            <span class="reel__desc">Escritório que recebe cliente na própria sala de trabalho:
+            o brise filtra a vista e mantém a luz natural.</span>
+            <span class="reel__spec">Corporativo · 96 m² · 2023</span>
+            <span class="reel__more">Ver galeria</span>
+          </span>
+        </button>
+      </li>
+
+      <li class="reel__item" data-project="meta">
+        <button class="reel__btn" type="button"
+                aria-label="Abrir galeria do projeto Apto Metamorfose — 5 fotos">
+          <img src="img/capas/meta.webp" width="1200" height="1600"
+               alt="Sala de jantar do Apto Metamorfose com lustre circular e cortina clara"
+               loading="lazy" decoding="async">
+          <span class="reel__scrim"></span>
+          <span class="reel__card">
+            <span class="reel__idx">04</span>
+            <span class="reel__name">Apto Metamorfose</span>
+            <span class="reel__desc">Primeiro apartamento de um casal jovem, com o investimento
+            concentrado em três peças fixas de marcenaria.</span>
+            <span class="reel__spec">Residencial · 74 m² · 2023</span>
+            <span class="reel__more">Ver galeria</span>
+          </span>
+        </button>
+      </li>
+
+    </ul>
+  </div>
+
+  <p class="reel__hint" aria-hidden="true">Arraste para o lado</p>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lb-title">
+  <div class="lb__bar">
+    <div class="lb__meta">
+      <h2 class="lb__title" id="lb-title"></h2>
+      <p class="lb__spec"></p>
+    </div>
+    <p class="lb__count"><span class="lb__cur">1</span><span class="lb__sep">/</span><span class="lb__tot">1</span></p>
+    <button class="lb__close" type="button" aria-label="Fechar galeria">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+    </button>
+  </div>
+
+  <button class="lb__nav lb__nav--prev" type="button" aria-label="Foto anterior">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4L7 12l8 8" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+  </button>
+
+  <div class="lb__stage">
+    <figure class="lb__figure">
+      <img class="lb__img" alt="">
+    </figure>
+    <p class="lb__caption"></p>
+  </div>
+
+  <button class="lb__nav lb__nav--next" type="button" aria-label="Próxima foto">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+  </button>
+
+  <div class="lb__dots" role="tablist" aria-label="Fotos do projeto"></div>
+</div>
+<!-- ============ ESCRITÓRIO / SOBRE ============ -->
+<section class="about" id="escritorio">
+  <div class="wrap about__grid">
+    <div class="about__media" data-reveal>
+      <img src="img/sobre/arquiteta.webp" alt="Mariana Costa sentada no living de um projeto entregue" loading="lazy" decoding="async">
+      <span class="about__caption">Mariana Costa — Apto Metamorfose, 2023</span>
+    </div>
+
+    <div class="about__text" data-reveal>
+      <p class="eyebrow"><span class="rule"></span>Quem assina</p>
+      <h2 class="sec-title">Arquitetura com alma,<br>feita para a <em>sua história</em>.</h2>
+
+      <p>O Mariana Costa Arquitetura + Interiores é um escritório em Florianópolis
+      especializado em projetos residenciais e comerciais que unem estética,
+      funcionalidade e personalidade.</p>
+
+      <p>À frente do escritório, a arquiteta Mariana Costa transforma a escuta atenta
+      em espaços autênticos. Cada projeto nasce das histórias, vivências e necessidades
+      de quem vai ocupá-lo, traduzindo seu jeito de viver em escolhas que fazem sentido
+      no dia a dia.</p>
+
+      <p>Com uma linguagem contemporânea e atenção a cada detalhe, criamos ambientes
+      que acolhem, facilitam a rotina e valorizam o seu patrimônio. Da concepção ao
+      acompanhamento da execução, nosso compromisso é transformar ideias em espaços
+      com identidade, conforto e alma.</p>
+
+      <p class="about__closing">Mais do que transformar ambientes, queremos que você
+      se reconheça em cada um deles.</p>
+
+      <ul class="about__list">
+        <li><span>Projetos arquitetônicos</span><em>terreno, entorno e implantação</em></li>
+        <li><span>Interiores residenciais</span><em>layout, materiais, marcenaria</em></li>
+        <li><span>Interiores comerciais</span><em>identidade de marca e rotina</em></li>
+        <li><span>Acompanhamento de obra</span><em>visitas e orientação técnica</em></li>
+      </ul>
+
+      <a href="#servicos" class="about__link">Ver todos os serviços</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="services" id="servicos">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow"><span class="rule"></span>O que fazemos</p>
+      <h2 class="sec-title">Serviços</h2>
+      <p class="sec-sub">Do projeto completo ao atendimento pontual — o escopo se ajusta
+      ao momento de cada cliente.</p>
+    </header>
+
+    <ul class="svc">
+      <li class="svc__item" data-reveal>
+        <h3 class="svc__name">Projetos arquitetônicos</h3>
+        <p class="svc__text">Projetos que nascem da escuta e traduzem suas necessidades em
+        espaços com identidade. Unimos estética, funcionalidade e conforto, considerando a
+        relação com o terreno, o entorno e a sua forma de viver.</p>
+      </li>
+
+      <li class="svc__item" data-reveal>
+        <h3 class="svc__name">Projetos de interiores residenciais</h3>
+        <p class="svc__text">Criamos lares que contam histórias e acolhem a vida real.
+        Planejamos a distribuição dos ambientes, os materiais, a iluminação e a marcenaria
+        para trazer beleza, praticidade e personalidade à rotina de quem mora.</p>
+      </li>
+
+      <li class="svc__item" data-reveal>
+        <h3 class="svc__name">Projetos de interiores comerciais</h3>
+        <p class="svc__text">Traduzimos a essência da sua marca em espaços que conectam
+        pessoas ao seu negócio. Aliamos identidade visual, conforto e funcionalidade para
+        valorizar a experiência dos clientes e facilitar a rotina da equipe.</p>
+      </li>
+
+      <li class="svc__item" data-reveal>
+        <h3 class="svc__name">Acompanhamento de obra</h3>
+        <p class="svc__text">Acompanhamos a execução para que as escolhas do projeto se
+        concretizem com cuidado. Por meio de visitas e orientações aos profissionais
+        envolvidos, conferimos detalhes, esclarecemos dúvidas e auxiliamos nas decisões
+        ao longo da obra.</p>
+      </li>
+
+      <li class="svc__item" data-reveal>
+        <h3 class="svc__name">Consultoria de interiores</h3>
+        <p class="svc__text">Um olhar profissional para orientar suas escolhas e transformar
+        seu ambiente com mais segurança. Em um atendimento pontual, indicamos soluções de
+        layout, cores, materiais, mobiliário e iluminação conforme suas necessidades.</p>
+      </li>
+
+      <li class="svc__item" data-reveal>
+        <h3 class="svc__name">Ambientação de interiores</h3>
+        <p class="svc__text">Damos vida e personalidade aos espaços por meio da seleção e
+        composição de móveis, tapetes, cortinas, obras de arte e objetos decorativos. Cada
+        escolha busca criar harmonia e expressar a identidade de quem vive ou utiliza
+        o ambiente.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CTA / CONTATO ============ -->
+<section class="contact" id="contato">
+  <div class="wrap contact__grid">
+    <div class="contact__lead" data-reveal>
+      <p class="eyebrow eyebrow--light"><span class="rule"></span>Contato</p>
+      <h2 class="contact__title">Vamos conversar<br>sobre o seu <em>projeto</em>.</h2>
+      <p class="contact__sub">Conte onde fica o imóvel, a metragem aproximada e o que você quer
+      resolver. Respondemos em até um dia útil.</p>
+
+      <a href="https://wa.me/5548999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto%20de%20interiores."
+         class="btn btn--brass" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+
+    <div class="contact__info" data-reveal>
+      <div class="info-block">
+        <h3>Escritório</h3>
+        <p>R. Campolino Alves, 300 — Sala 712<br>
+        Capoeiras · Florianópolis — SC<br>
+        CEP 88085-110</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=R.+Campolino+Alves,+300+-+Sala+712,+Capoeiras,+Florian%C3%B3polis+-+SC,+88085-110"
+           target="_blank" rel="noopener" class="link-arrow">Abrir no mapa</a>
+      </div>
+
+      <div class="info-block">
+        <h3>Atendimento</h3>
+        <p>Segunda a sexta · 9h às 18h<br>
+        Visitas com hora marcada</p>
+      </div>
+
+      <div class="info-block">
+        <h3>Direto</h3>
+        <p>
+          <a href="mailto:contato@marianacostaarquitetura.com.br">contato@marianacostaarquitetura.com.br</a><br>
+          <a href="tel:+554899999999">+55 48 99999-9999</a>
+        </p>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" class="link-arrow">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div class="foot__mark">
+      <span class="foot__name">Mariana Costa</span>
+      <span class="foot__sub">Arquitetura de Interiores</span>
+    </div>
+
+    <nav class="foot__nav" aria-label="Rodapé">
+      <a href="#projetos">Projetos</a>
+      <a href="#escritorio">Escritório</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <p class="foot__legal">
+      © <span id="year">2026</span> Mariana Costa Arquitetura · Florianópolis — SC<br>
+      Todas as imagens são de projetos autorais do escritório.
+    </p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5548999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto%20de%20interiores."
+   target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 5.82 2.42 8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/>
+  </svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
