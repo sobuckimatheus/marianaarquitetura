@@ -380,27 +380,6 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   animation:fadeUp .9s var(--ease) 1s both;
 }
 
-.hero__meta{
-  position:relative; z-index:2;
-  max-width:var(--max); width:100%; margin-inline:auto;
-  margin-top:clamp(2.5rem,5vw,4rem);
-  padding:1.25rem var(--gut) 0;
-  display:flex; align-items:center; gap:.85rem;
-  font-family:var(--mono);
-  font-size:.64rem; letter-spacing:.17em; text-transform:uppercase;
-  color:rgba(247,244,239,.62);
-  animation:fadeUp .9s var(--ease) 1.15s both;
-}
-.hero__meta::before{
-  content:"";
-  position:absolute; top:0;
-  left:var(--gut); right:var(--gut);
-  height:1px; background:var(--linha-cl);
-}
-.hero__meta .dot{
-  width:3px; height:3px; border-radius:50%;
-  background:var(--latao); flex:none;
-}
 
 .hero__scroll{
   position:absolute; z-index:3;
