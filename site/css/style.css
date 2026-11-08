@@ -256,11 +256,11 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
 .drawer__links a{
   display:flex; align-items:baseline; gap:1.1rem;
   font-family:var(--display);
-  font-size:clamp(2rem,10vw,3rem);
-  font-weight:300; line-height:1.3;
+  font-size:clamp(1.5rem,5.5vw,2rem);
+  font-weight:300; line-height:1.25;
   color:var(--cal); text-decoration:none;
   border-bottom:1px solid var(--linha-cl);
-  padding:.5rem 0;
+  padding:.75rem 0;
 }
 .drawer__links em{
   font-family:var(--mono); font-style:normal;
@@ -340,7 +340,7 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   font-weight:300;
   line-height:.98;
   letter-spacing:-.022em;
-  max-width:22ch;
+  max-width:26ch;
   text-wrap:balance;
   margin:0 0 clamp(1.5rem,3vw,2.25rem);
 }
@@ -1098,9 +1098,6 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   }
   .about__list em{ align-self:flex-start; }
 
-  /* no mobile a headline flui sozinha. O <br> some, mas o espaço
-     que o segue no HTML permanece — sem ele as palavras colam. */
-  .hero__title .br-desk{ display:none; }
   .hero__title{ max-width:none; }
 
   .lb__bar{ padding:1rem; gap:1rem; }
