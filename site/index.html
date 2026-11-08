@@ -3,19 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mariana Costa Arquitetura — Arquitetura de interiores em Florianópolis</title>
-<meta name="description" content="Escritório de arquitetura e interiores em Florianópolis. Projetos arquitetônicos, interiores residenciais e comerciais, acompanhamento de obra, consultoria e ambientação.">
+<title>Arquiteto em Florianópolis | Mariana Costa Arquitetura</title>
+<meta name="description" content="Procura arquiteto em Florianópolis? A arquiteta Mariana Costa projeta interiores residenciais e comerciais em Floripa, do projeto à obra. Agende uma reunião.">
 <meta name="theme-color" content="#0E0D0B">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mariana Costa Arquitetura">
-<meta property="og:description" content="Arquitetura e interiores em Florianópolis. Projetos que nascem da escuta e traduzem suas necessidades em espaços com identidade.">
-<meta property="og:image" content="img/hero/hero-desktop.webp">
+<meta property="og:title" content="Arquiteto em Florianópolis | Mariana Costa Arquitetura">
+<meta property="og:description" content="Arquiteta em Florianópolis especializada em interiores residenciais e comerciais. Projetos que nascem da escuta, do conceito ao acompanhamento da obra.">
+<meta property="og:url" content="https://marianacostaarquitetura.com.br/">
+<meta property="og:site_name" content="Mariana Costa Arquitetura">
+<meta property="og:image" content="https://marianacostaarquitetura.com.br/img/hero/hero-desktop.webp">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1361">
+<meta property="og:image:alt" content="Sala de jantar de cobertura projetada pelo escritório, com iluminação em latão">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="pt_BR">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- ATENÇÃO: confirme o domínio definitivo antes de publicar.
+     canonical e og:url precisam apontar para a URL real de produção. -->
+<link rel="canonical" href="https://marianacostaarquitetura.com.br/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- geolocalização (SEO local) -->
+<meta name="geo.region" content="BR-SC">
+<meta name="geo.placename" content="Florianópolis">
+<meta name="geo.position" content="-27.5969;-48.5495">
+<meta name="ICBM" content="-27.5969, -48.5495">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -23,31 +40,87 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Mariana Costa Arquitetura",
-  "description": "Escritório de arquitetura e interiores em Florianópolis, com projetos residenciais e comerciais.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "R. Campolino Alves, 300 — Sala 712, Capoeiras",
-    "addressLocality": "Florianópolis",
-    "addressRegion": "SC",
-    "postalCode": "88085-110",
-    "addressCountry": "BR"
-  },
-  "areaServed": "Florianópolis e Grande Florianópolis",
-  "knowsLanguage": "pt-BR",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Serviços",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos arquitetônicos" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos de interiores residenciais" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos de interiores comerciais" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acompanhamento de obra" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria de interiores" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ambientação de interiores" } }
-    ]
-  }
+  "@graph": [
+    {
+      "@type": ["ProfessionalService", "ArchitecturalService"],
+      "@id": "https://marianacostaarquitetura.com.br/#escritorio",
+      "name": "Mariana Costa Arquitetura + Interiores",
+      "alternateName": "Mariana Costa Arquitetura",
+      "description": "Escritório de arquitetura e interiores em Florianópolis, especializado em projetos residenciais e comerciais que unem estética, funcionalidade e personalidade.",
+      "url": "https://marianacostaarquitetura.com.br/",
+      "image": "https://marianacostaarquitetura.com.br/img/hero/hero-desktop.webp",
+      "email": "contato@marianacostaarquitetura.com.br",
+      "telephone": "+55-48-99999-9999",
+      "priceRange": "$$$",
+      "currenciesAccepted": "BRL",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Campolino Alves, 300 — Sala 712",
+        "addressLocality": "Florianópolis",
+        "addressRegion": "SC",
+        "postalCode": "88085-110",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -27.5969,
+        "longitude": -48.5495
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Florianópolis" },
+        { "@type": "City", "name": "São José" },
+        { "@type": "City", "name": "Palhoça" },
+        { "@type": "City", "name": "Biguaçu" },
+        { "@type": "AdministrativeArea", "name": "Litoral de Santa Catarina" }
+      ],
+      "knowsLanguage": "pt-BR",
+      "founder": { "@id": "https://marianacostaarquitetura.com.br/#mariana" },
+      "employee": { "@id": "https://marianacostaarquitetura.com.br/#mariana" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de arquitetura e interiores",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos arquitetônicos", "description": "Projetos que consideram a relação com o terreno, o entorno e a forma de viver do cliente." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos de interiores residenciais", "description": "Distribuição dos ambientes, materiais, iluminação e marcenaria para a rotina de quem mora." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projetos de interiores comerciais", "description": "Identidade visual, conforto e funcionalidade para valorizar a experiência dos clientes." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acompanhamento de obra", "description": "Visitas e orientações aos profissionais envolvidos ao longo da execução." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria de interiores", "description": "Atendimento pontual com soluções de layout, cores, materiais, mobiliário e iluminação." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ambientação de interiores", "description": "Seleção e composição de móveis, tapetes, cortinas, obras de arte e objetos decorativos." } }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://marianacostaarquitetura.com.br/#mariana",
+      "name": "Mariana Costa",
+      "jobTitle": "Arquiteta e urbanista",
+      "image": "https://marianacostaarquitetura.com.br/img/sobre/arquiteta.webp",
+      "worksFor": { "@id": "https://marianacostaarquitetura.com.br/#escritorio" },
+      "knowsAbout": [
+        "Arquitetura de interiores",
+        "Projeto arquitetônico",
+        "Interiores residenciais",
+        "Interiores comerciais",
+        "Acompanhamento de obra"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://marianacostaarquitetura.com.br/#site",
+      "url": "https://marianacostaarquitetura.com.br/",
+      "name": "Mariana Costa Arquitetura",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://marianacostaarquitetura.com.br/#escritorio" }
+    }
+  ]
 }
 </script>
 </head>
@@ -98,7 +171,7 @@
   <div class="hero__media">
     <picture>
       <source media="(max-width: 820px)" type="image/webp" srcset="img/hero/hero-mobile.webp" width="1366" height="2048">
-      <img src="img/hero/hero-desktop.webp" width="2048" height="1361" alt="Sala de jantar integrada de cobertura, com mesa posta, iluminação em latão e cozinha ao fundo" fetchpriority="high" decoding="async">
+      <img src="img/hero/hero-desktop.webp" width="2048" height="1361" alt="Projeto de interiores em Florianópolis: sala de jantar integrada de cobertura, com iluminação em latão e cozinha ao fundo" fetchpriority="high" decoding="async">
     </picture>
     <div class="hero__scrim"></div>
   </div>
@@ -107,12 +180,11 @@
     <p class="hero__eyebrow"><span class="rule"></span>Florianópolis · Santa Catarina</p>
 
     <h1 class="hero__title">
-      <span class="line"><span>Interiores que</span></span>
-      <span class="line"><span><em>permanecem</em></span></span>
-      <span class="line"><span>em quem vive neles.</span></span>
+      <span class="line"><span>Arquiteto em Florianópolis<br class="br-desk"> para <em>interiores</em> que ficam.</span></span>
     </h1>
 
-    <p class="hero__lede">Projetos residenciais e corporativos conduzidos do primeiro croqui à última peça instalada.</p>
+    <p class="hero__lede">Projetos residenciais e comerciais, da concepção
+    ao acompanhamento da obra.</p>
 
     <div class="hero__actions">
       <a href="#projetos" class="btn btn--light">Ver projetos</a>
@@ -174,7 +246,7 @@
   <div class="wrap">
     <header class="sec-head">
       <p class="eyebrow"><span class="rule"></span>Seleção de projetos</p>
-      <h2 class="sec-title">Obras entregues</h2>
+      <h2 class="sec-title">Projetos de arquitetura e interiores em Florianópolis</h2>
       <p class="sec-sub">Quatro projetos, do apartamento compacto à cobertura.
       Toque em um deles para ver a galeria completa.</p>
     </header>
@@ -188,7 +260,7 @@
         <button class="reel__btn" type="button"
                 aria-label="Abrir galeria do projeto Cobertura Cura — 8 fotos">
           <img src="img/capas/cura.webp" width="1200" height="1600"
-               alt="Estar da Cobertura Cura com poltronas escultóricas e painel vazado em latão"
+               alt="Cobertura Cura, projeto residencial em Florianópolis: estar com poltronas escultóricas e painel vazado em latão"
                loading="lazy" decoding="async">
           <span class="reel__scrim"></span>
           <span class="reel__card">
@@ -206,7 +278,7 @@
         <button class="reel__btn" type="button"
                 aria-label="Abrir galeria do projeto Apto Essência — 8 fotos">
           <img src="img/capas/essencia.webp" width="1200" height="1600"
-               alt="Corredor do Apto Essência em enfiada até o estar, com espelho de parede inteira"
+               alt="Apto Essência, interiores residenciais em Florianópolis: corredor em enfiada até o estar, com espelho de parede inteira"
                loading="lazy" decoding="async">
           <span class="reel__scrim"></span>
           <span class="reel__card">
@@ -224,7 +296,7 @@
         <button class="reel__btn" type="button"
                 aria-label="Abrir galeria do projeto Office Milão — 4 fotos">
           <img src="img/capas/milao.webp" width="1200" height="1600"
-               alt="Escritório Office Milão com brise de madeira e estante iluminada"
+               alt="Office Milão, projeto de interiores comerciais em Florianópolis: brise de madeira e estante iluminada"
                loading="lazy" decoding="async">
           <span class="reel__scrim"></span>
           <span class="reel__card">
@@ -242,7 +314,7 @@
         <button class="reel__btn" type="button"
                 aria-label="Abrir galeria do projeto Apto Metamorfose — 5 fotos">
           <img src="img/capas/meta.webp" width="1200" height="1600"
-               alt="Sala de jantar do Apto Metamorfose com lustre circular e cortina clara"
+               alt="Apto Metamorfose, projeto residencial em Florianópolis: sala de jantar com lustre circular e cortina clara"
                loading="lazy" decoding="async">
           <span class="reel__scrim"></span>
           <span class="reel__card">
@@ -296,7 +368,7 @@
 <section class="about" id="escritorio">
   <div class="wrap about__grid">
     <div class="about__media" data-reveal>
-      <img src="img/sobre/arquiteta.webp" alt="Mariana Costa sentada no living de um projeto entregue" loading="lazy" decoding="async">
+      <img src="img/sobre/arquiteta.webp" alt="A arquiteta Mariana Costa no living de um projeto entregue em Florianópolis" loading="lazy" decoding="async">
       <span class="about__caption">Mariana Costa — Apto Metamorfose, 2023</span>
     </div>
 
@@ -338,7 +410,7 @@
   <div class="wrap">
     <header class="sec-head">
       <p class="eyebrow"><span class="rule"></span>O que fazemos</p>
-      <h2 class="sec-title">Serviços</h2>
+      <h2 class="sec-title">Serviços de arquitetura e interiores</h2>
       <p class="sec-sub">Do projeto completo ao atendimento pontual — o escopo se ajusta
       ao momento de cada cliente.</p>
     </header>
@@ -406,7 +478,7 @@
 
     <div class="contact__info" data-reveal>
       <div class="info-block">
-        <h3>Escritório</h3>
+        <p class="info-block__label">Escritório</p>
         <p>R. Campolino Alves, 300 — Sala 712<br>
         Capoeiras · Florianópolis — SC<br>
         CEP 88085-110</p>
@@ -415,13 +487,13 @@
       </div>
 
       <div class="info-block">
-        <h3>Atendimento</h3>
+        <p class="info-block__label">Atendimento</p>
         <p>Segunda a sexta · 9h às 18h<br>
         Visitas com hora marcada</p>
       </div>
 
       <div class="info-block">
-        <h3>Direto</h3>
+        <p class="info-block__label">Direto</p>
         <p>
           <a href="mailto:contato@marianacostaarquitetura.com.br">contato@marianacostaarquitetura.com.br</a><br>
           <a href="tel:+554899999999">+55 48 99999-9999</a>

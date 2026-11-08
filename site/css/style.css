@@ -22,7 +22,7 @@
   --mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   /* escala fluida */
-  --t-hero: clamp(2.75rem, 7.2vw, 7rem);
+  --t-hero: clamp(2rem, 4.6vw, 4.4rem);
   --t-sec:  clamp(2rem, 4.4vw, 3.9rem);
   --t-proj: clamp(1.75rem, 3.6vw, 3.1rem);
   --t-mani: clamp(1.45rem, 3vw, 2.75rem);
@@ -340,7 +340,8 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   font-weight:300;
   line-height:.98;
   letter-spacing:-.022em;
-  max-width:16ch;
+  max-width:22ch;
+  text-wrap:balance;
   margin:0 0 clamp(1.5rem,3vw,2.25rem);
 }
 .hero__title em{
@@ -366,10 +367,10 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
 }
 
 .hero__lede{
-  max-width:46ch;
-  margin:0 0 clamp(2rem,4vw,2.9rem);
-  font-size:clamp(1rem,1.25vw,1.15rem);
-  line-height:1.72;
+  max-width:44ch;
+  margin:0 0 clamp(1.75rem,3.2vw,2.4rem);
+  font-size:clamp(.92rem,1vw,1rem);
+  line-height:1.7;
   color:rgba(247,244,239,.88);
   animation:fadeUp .9s var(--ease) .85s both;
 }
@@ -935,10 +936,10 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   padding-top:1.25rem;
   border-top:1px solid var(--linha-cl);
 }
-.info-block h3{
+.info-block__label{
   font-family:var(--mono); font-size:.63rem;
   letter-spacing:.2em; text-transform:uppercase;
-  color:var(--latao); margin-bottom:.9rem;
+  color:var(--latao); margin:0 0 .9rem;
 }
 .info-block p{
   margin:0; line-height:1.9; color:rgba(247,244,239,.82);
@@ -1048,7 +1049,7 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
 @media (max-width:820px){
   .hero{ min-height:100svh; }
   .hero__media img{ object-position:center 50%; }
-  .hero__title{ max-width:14ch; }
+  .hero__title{ max-width:20ch; }
   .hero__scroll{ display:none; }
   .hero__actions .btn{ flex:1 1 auto; }
 
@@ -1096,6 +1097,11 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
     flex-direction:column; align-items:flex-start; gap:.4rem;
   }
   .about__list em{ align-self:flex-start; }
+
+  /* no mobile a headline flui sozinha. O <br> some, mas o espaço
+     que o segue no HTML permanece — sem ele as palavras colam. */
+  .hero__title .br-desk{ display:none; }
+  .hero__title{ max-width:none; }
 
   .lb__bar{ padding:1rem; gap:1rem; }
   .lb__title{ font-size:1.1rem; }

@@ -45,6 +45,7 @@ Busque e substitua em `index.html`:
 | `+554899999999` / `+55 48 99999-9999` | telefone na seção Contato |
 | `contato@marianacostaarquitetura.com.br` | e-mail na seção Contato |
 | `https://instagram.com/` | link do Instagram |
+| `marianacostaarquitetura.com.br` | **domínio** — aparece no canonical, og:url, sitemap.xml e robots.txt |
 | `CAU A000000-0` | número do CAU (bloco do manifesto) |
 
 Textos fictícios a revisar com a arquiteta:
@@ -67,3 +68,31 @@ Total da pasta img/: 5,5 MB — contra ~39 MB dos originais.
 
 Para reconverter, use o script em `scripts/build-images.js`
 (requer `npm i sharp`).
+
+## SEO
+
+Palavra-chave principal: **arquiteto em Florianópolis** (480 buscas/mês).
+Aparece no H1, no title, na meta description e nos H2 das seções.
+
+Observação sobre o gênero: a palavra que ranqueia é "arquiteto" (masculino),
+mas a Mariana é arquiteta. O H1 usa a forma que as pessoas buscam; todo
+texto que se refere a ela usa "arquiteta". O Google trata as duas como
+variações da mesma intenção.
+
+O que está configurado:
+- `<title>` 54 caracteres, meta description 157 — ambos na faixa ideal
+- canonical, robots, Open Graph completo e twitter:card
+- geo tags (`geo.region`, `geo.position`, ICBM) para busca local
+- JSON-LD com 3 entidades ligadas: ProfessionalService + ArchitecturalService,
+  Person (a arquiteta) e WebSite — com endereço, coordenadas, horário,
+  cidades atendidas e os 6 serviços
+- `sitemap.xml` e `robots.txt` apontando para ele
+- alt text das imagens com projeto e localidade
+
+**Antes de publicar:** troque `marianacostaarquitetura.com.br` pelo domínio
+real em `index.html` (canonical, og:url, og:image e JSON-LD), `sitemap.xml`
+e `robots.txt`. Canonical apontando para o domínio errado prejudica o
+ranqueamento.
+
+Depois de publicar, cadastre o site no Google Search Console e crie/reivindique
+o **perfil do Google Meu Negócio** — para busca local ele pesa mais que o site.
