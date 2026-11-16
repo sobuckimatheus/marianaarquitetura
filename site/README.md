@@ -43,13 +43,12 @@ Busque e substitua em `index.html`:
 |---|---|
 | `5548999999999` | links do WhatsApp (2x no corpo + 1x no menu mobile) |
 | `+554899999999` / `+55 48 99999-9999` | telefone na seção Contato |
-| `contato@marianacostaarquitetura.com.br` | e-mail na seção Contato |
 | `https://instagram.com/` | link do Instagram |
 | `marianacostaarquitetura.com.br` | **domínio** — aparece no canonical, og:url, sitemap.xml e robots.txt |
-| `CAU A000000-0` | número do CAU (bloco do manifesto) |
 
 Textos fictícios a revisar com a arquiteta:
-- Números da faixa (12 anos / 80+ projetos / 4.200 m²)
+- Números da faixa: 12 anos e 4.200 m² ainda são estimativas
+  (150+ projetos é o número real)
 - Áreas, anos e descrições dos 4 projetos
 - Frase do manifesto (abaixo do hero)
 - Horário de atendimento
@@ -68,6 +67,25 @@ Total da pasta img/: 5,5 MB — contra ~39 MB dos originais.
 
 Para reconverter, use o script em `scripts/build-images.js`
 (requer `npm i sharp`).
+
+## Identidade visual
+
+A paleta vem do logotipo (`img/Logotipo.png`): rosé, cobre e champanhe
+metálicos. São dois tons de acento por uma razão de contraste — o rosé
+claro tem apenas 2.26:1 sobre o fundo claro, insuficiente para texto:
+
+| token | hex | uso |
+|---|---|---|
+| `--cobre` | `#906054` | acento sobre fundo claro (4.8:1) |
+| `--rose` | `#C09C9C` | acento sobre fundo escuro (7.8:1) |
+| `--champanhe` | `#E4C09C` | hover de botões em fundo escuro |
+
+As variáveis `--latao`/`--latao-cl` continuam existindo como aliases,
+porque o site inteiro as referencia.
+
+O logotipo aparece na nav e no rodapé (`img/logo.webp`). Sobre a foto do
+hero recebe brightness + drop-shadow para não sumir nas áreas claras;
+com a nav rolada, o filtro sai.
 
 ## SEO
 

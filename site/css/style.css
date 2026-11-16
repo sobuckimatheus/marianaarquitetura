@@ -5,16 +5,27 @@
    ============================================================ */
 
 :root{
-  /* cor */
+  /* Paleta extraída do logotipo: rosé, cobre e champanhe metálicos.
+     Dois tons de acento porque o rosé claro não tem contraste
+     suficiente sobre o fundo claro (2.26:1):
+       --cobre   sobre fundo claro  → 4.8:1
+       --rose    sobre fundo escuro → 7.8:1 */
   --carvao:    #0E0D0B;
   --carvao-2:  #17150F;
-  --cal:       #F7F4EF;
-  --travertino:#E6DED2;
-  --latao:     #B99B6B;
-  --latao-cl:  #D4BC93;
-  --tabaco:    #5A5248;
-  --linha:     rgba(14,13,11,.14);
-  --linha-cl:  rgba(247,244,239,.18);
+  --cal:       #F8F4F2;
+  --travertino:#EADFDA;
+  --cobre:     #906054;
+  --cobre-esc: #78483C;
+  --rose:      #C09C9C;
+  --champanhe: #E4C09C;
+  --tabaco:    #6B5750;
+  --linha:     rgba(120,72,60,.18);
+  --linha-cl:  rgba(248,244,242,.18);
+
+  /* aliases: o site inteiro referencia --latao/--latao-cl.
+     Em fundo claro o acento é o cobre; em fundo escuro, o rosé. */
+  --latao:     var(--cobre);
+  --latao-cl:  var(--rose);
 
   /* tipografia */
   --display: "Cormorant Garamond", "Times New Roman", serif;
@@ -130,8 +141,9 @@ h1,h2,h3{ margin:0; font-weight:400; }
 .btn--ghost{ border-color:rgba(247,244,239,.45); color:var(--cal); }
 .btn--ghost:hover{ border-color:var(--cal); background:rgba(247,244,239,.1); }
 
-.btn--brass{ background:var(--latao); color:var(--carvao); }
-.btn--brass:hover{ background:var(--latao-cl); }
+/* CTA sobre fundo escuro: o rosé destaca, o cobre apagaria */
+.btn--brass{ background:var(--rose); color:var(--carvao); }
+.btn--brass:hover{ background:var(--champanhe); }
 
 .link-arrow{
   display:inline-block; margin-top:.9rem;
@@ -165,16 +177,14 @@ h1,h2,h3{ margin:0; font-weight:400; }
   display:flex; flex-direction:column; line-height:1;
   text-decoration:none; margin-right:auto;
 }
-.nav__mark-name{
-  font-family:var(--display);
-  font-size:1.3rem; letter-spacing:.02em; color:var(--cal);
-  transition:color .5s var(--ease);
-}
-.nav__mark-sub{
-  font-family:var(--mono);
-  font-size:.56rem; letter-spacing:.34em; text-transform:uppercase;
-  color:var(--latao-cl); margin-top:.42rem;
-  transition:color .5s var(--ease);
+/* O logotipo é rosé/cobre sobre transparente: funciona tanto sobre a
+   foto escura do hero quanto sobre o fundo claro da nav rolada.
+   Sobre o hero recebe um leve brilho para não sumir nas áreas claras. */
+.nav__mark img{
+  height:clamp(3.4rem,5.2vw,4.6rem);
+  width:auto;
+  filter:brightness(1.3) drop-shadow(0 2px 14px rgba(0,0,0,.6));
+  transition:filter .5s var(--ease), height .5s var(--ease);
 }
 
 .nav__links{ display:flex; gap:2.35rem; }
@@ -202,7 +212,7 @@ h1,h2,h3{ margin:0; font-weight:400; }
   padding:.72rem 1.4rem;
   transition:background .4s var(--ease), border-color .4s var(--ease), color .4s var(--ease);
 }
-.nav__cta:hover{ background:var(--latao); border-color:var(--latao); color:var(--carvao); }
+.nav__cta:hover{ background:var(--rose); border-color:var(--rose); color:var(--carvao); }
 
 /* estado rolado */
 .nav.is-stuck{
@@ -212,8 +222,10 @@ h1,h2,h3{ margin:0; font-weight:400; }
   border-bottom-color:var(--linha);
 }
 .nav.is-stuck .nav__inner{ padding-block:.95rem; }
-.nav.is-stuck .nav__mark-name{ color:var(--carvao); }
-.nav.is-stuck .nav__mark-sub{ color:var(--tabaco); }
+.nav.is-stuck .nav__mark img{
+  filter:none;
+  height:clamp(2.6rem,3.6vw,3.2rem);
+}
 .nav.is-stuck .nav__links a{ color:var(--tabaco); }
 .nav.is-stuck .nav__links a:hover{ color:var(--carvao); }
 .nav.is-stuck .nav__cta{ color:var(--carvao); border-color:var(--linha); }
@@ -264,7 +276,7 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
 }
 .drawer__links em{
   font-family:var(--mono); font-style:normal;
-  font-size:.62rem; letter-spacing:.2em; color:var(--latao);
+  font-size:.62rem; letter-spacing:.2em; color:var(--rose);
 }
 
 .drawer__foot{
@@ -692,7 +704,7 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   color:var(--cal); cursor:pointer;
   transition:background .35s var(--ease), border-color .35s var(--ease), color .35s var(--ease);
 }
-.lb__close:hover{ background:var(--latao); border-color:var(--latao); color:var(--carvao); }
+.lb__close:hover{ background:var(--rose); border-color:var(--rose); color:var(--carvao); }
 .lb__close svg{ width:1.1rem; height:1.1rem; }
 
 /* palco */
@@ -749,7 +761,7 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
 }
 .lb__nav--prev{ grid-area:prev; }
 .lb__nav--next{ grid-area:next; }
-.lb__nav:hover{ background:var(--latao); border-color:var(--latao); color:var(--carvao); }
+.lb__nav:hover{ background:var(--rose); border-color:var(--rose); color:var(--carvao); }
 .lb__nav svg{ width:1.3rem; height:1.3rem; }
 
 /* indicadores */
@@ -767,7 +779,7 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   transition:background .4s var(--ease);
 }
 .lb__dot:hover{ background:rgba(247,244,239,.55); }
-.lb__dot.is-on{ background:var(--latao); }
+.lb__dot.is-on{ background:var(--rose); }
 
 /* ============================================================
    ESCRITÓRIO
@@ -918,7 +930,7 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
 .info-block__label{
   font-family:var(--mono); font-size:.63rem;
   letter-spacing:.2em; text-transform:uppercase;
-  color:var(--latao); margin:0 0 .9rem;
+  color:var(--rose); margin:0 0 .9rem;
 }
 .info-block p{
   margin:0; line-height:1.9; color:rgba(247,244,239,.82);
@@ -949,11 +961,10 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   justify-content:space-between;
 }
 .foot__mark{ display:flex; flex-direction:column; line-height:1; }
-.foot__name{ font-family:var(--display); font-size:1.3rem; color:var(--cal); }
-.foot__sub{
-  font-family:var(--mono); font-size:.56rem;
-  letter-spacing:.3em; text-transform:uppercase;
-  color:var(--latao); margin-top:.45rem;
+.foot__mark img{
+  height:clamp(2.6rem,4vw,3.4rem);
+  width:auto;
+  filter:brightness(1.12);
 }
 
 .foot__nav{ display:flex; flex-wrap:wrap; gap:1.5rem; }
@@ -988,7 +999,7 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
              visibility .45s, background .35s var(--ease), color .35s var(--ease);
 }
 .wa-float.is-on{ opacity:1; visibility:visible; transform:none; }
-.wa-float:hover{ background:var(--latao); color:var(--carvao); }
+.wa-float:hover{ background:var(--rose); color:var(--carvao); }
 .wa-float svg{ width:1.45rem; height:1.45rem; }
 
 /* ============================================================
