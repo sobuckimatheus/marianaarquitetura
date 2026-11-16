@@ -60,10 +60,29 @@ Textos oficiais, enviados pela arquiteta — não reescrever:
 A seção "Processo" (4 etapas) foi removida: era inventada e afirmava
 condições comerciais que podiam não corresponder ao contrato real.
 
-## Imagens
-Todas em **WebP**, qualidade 82, geradas dos originais com `sharp`
-(capas 1200x1600; galerias até 1800px no lado maior).
-Total da pasta img/: 5,5 MB — contra ~39 MB dos originais.
+## Imagens e performance
+
+Tudo em **WebP** — nenhum JPEG ou PNG é servido, exceto os favicons.
+Pasta `img/`: 5,6 MB.
+
+Dimensionamento pelo tamanho real de exibição:
+- hero 1920px (desktop) e 1080x1530 (mobile), q80
+- capas da faixa em dois tamanhos (560 e 1000) via `srcset`;
+  o navegador baixa ~52 KB em vez de 204 KB
+- galerias no máximo 1600px de largura e 1700px de altura —
+  o lightbox nunca exibe mais que isso
+- logo em 420px (era 720px): 22 KB em vez de 53 KB
+
+Outras medidas:
+- `preload` do hero, que é a maior imagem e define o primeiro render
+- a primeira capa é eager; as outras três ficam lazy (estão fora da tela)
+- fontes reduzidas aos pesos que o CSS usa de fato (eram 9 variações)
+- os arquivos-fonte (`mari.jpeg`, `Logotipo.png`) saíram de `site/`
+  para `fontes-originais/`: não eram referenciados e pesavam 450 KB
+  no deploy
+
+Primeiro carregamento medido: **512 KB no mobile** (era 1.072 KB)
+e **473 KB no desktop**.
 
 Para reconverter, use o script em `scripts/build-images.js`
 (requer `npm i sharp`).

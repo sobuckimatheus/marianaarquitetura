@@ -13,15 +13,17 @@
 <meta property="og:url" content="https://marianacostaarquitetura.com.br/">
 <meta property="og:site_name" content="Mariana Costa Arquitetura">
 <meta property="og:image" content="https://marianacostaarquitetura.com.br/img/hero/hero-desktop.webp">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1366">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1281">
 <meta property="og:image:alt" content="Sala de jantar de cobertura projetada pelo escritório, com pendente escultórico e detalhes em latão">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="pt_BR">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<!-- Só os pesos que o CSS usa. Carregar famílias extras custa ~120 KB
+     de servidor externo e atrasa o primeiro render. -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Inter:wght@300;400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 
 <!-- ATENÇÃO: confirme o domínio definitivo antes de publicar.
      canonical e og:url precisam apontar para a URL real de produção. -->
@@ -33,6 +35,10 @@
 <meta name="geo.placename" content="Florianópolis">
 <meta name="geo.position" content="-27.5969;-48.5495">
 <meta name="ICBM" content="-27.5969, -48.5495">
+
+<!-- o hero é a maior imagem e define o primeiro render: adianta o download -->
+<link rel="preload" as="image" href="img/hero/hero-desktop.webp" media="(min-width:821px)">
+<link rel="preload" as="image" href="img/hero/hero-mobile.webp" media="(max-width:820px)">
 
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -133,7 +139,7 @@
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a href="#top" class="nav__mark" aria-label="Mariana Costa Arquitetura — início">
-      <img src="img/logo.webp" width="720" height="369"
+      <img src="img/logo.webp" width="420" height="215"
            alt="Mariana Costa Arquitetura + Interiores" decoding="async">
     </a>
 
@@ -171,8 +177,8 @@
 <section class="hero" id="top">
   <div class="hero__media">
     <picture>
-      <source media="(max-width: 820px)" type="image/webp" srcset="img/hero/hero-mobile.webp" width="1200" height="1700">
-      <img src="img/hero/hero-desktop.webp" width="2048" height="1366" alt="Projeto de interiores em Florianópolis: sala de jantar de cobertura com pendente escultórico, cadeiras em latão e adega integrada" fetchpriority="high" decoding="async">
+      <source media="(max-width: 820px)" type="image/webp" srcset="img/hero/hero-mobile.webp" width="1080" height="1530">
+      <img src="img/hero/hero-desktop.webp" width="1920" height="1281" alt="Projeto de interiores em Florianópolis: sala de jantar de cobertura com pendente escultórico, cadeiras em latão e adega integrada" fetchpriority="high" decoding="async">
     </picture>
     <div class="hero__scrim"></div>
   </div>
@@ -254,9 +260,12 @@
       <li class="reel__item" data-project="cura">
         <button class="reel__btn" type="button"
                 aria-label="Abrir galeria do projeto Cobertura Cura — 12 fotos">
-          <img src="img/capas/cura.webp" width="1200" height="1600"
+          <img src="img/capas/cura-560.webp"
+               srcset="img/capas/cura-560.webp 560w, img/capas/cura-1000.webp 1000w"
+               sizes="(max-width:820px) 78vw, 29vw"
+               width="1200" height="1600" fetchpriority="high"
                alt="Cobertura Cura, projeto residencial em Florianópolis: estar com poltronas escultóricas e painel vazado em latão"
-               loading="lazy" decoding="async">
+               decoding="async">
           <span class="reel__scrim"></span>
           <span class="reel__card">
             <span class="reel__idx">01</span>
@@ -272,7 +281,10 @@
       <li class="reel__item" data-project="essencia">
         <button class="reel__btn" type="button"
                 aria-label="Abrir galeria do projeto Apto Essência — 12 fotos">
-          <img src="img/capas/essencia.webp" width="1200" height="1600"
+          <img src="img/capas/essencia-560.webp"
+               srcset="img/capas/essencia-560.webp 560w, img/capas/essencia-1000.webp 1000w"
+               sizes="(max-width:820px) 78vw, 29vw"
+               width="1200" height="1600"
                alt="Apto Essência, interiores residenciais em Florianópolis: corredor em enfiada até o estar, com espelho de parede inteira"
                loading="lazy" decoding="async">
           <span class="reel__scrim"></span>
@@ -290,7 +302,10 @@
       <li class="reel__item" data-project="milao">
         <button class="reel__btn" type="button"
                 aria-label="Abrir galeria do projeto Office Milão — 11 fotos">
-          <img src="img/capas/milao.webp" width="1200" height="1600"
+          <img src="img/capas/milao-560.webp"
+               srcset="img/capas/milao-560.webp 560w, img/capas/milao-1000.webp 1000w"
+               sizes="(max-width:820px) 78vw, 29vw"
+               width="1200" height="1600"
                alt="Office Milão, projeto de interiores comerciais em Florianópolis: brise de madeira e estante iluminada"
                loading="lazy" decoding="async">
           <span class="reel__scrim"></span>
@@ -308,7 +323,10 @@
       <li class="reel__item" data-project="meta">
         <button class="reel__btn" type="button"
                 aria-label="Abrir galeria do projeto Apto Metamorfose — 12 fotos">
-          <img src="img/capas/meta.webp" width="1200" height="1600"
+          <img src="img/capas/meta-560.webp"
+               srcset="img/capas/meta-560.webp 560w, img/capas/meta-1000.webp 1000w"
+               sizes="(max-width:820px) 78vw, 29vw"
+               width="1200" height="1600"
                alt="Apto Metamorfose, projeto residencial em Florianópolis: sala de jantar com lustre circular e cortina clara"
                loading="lazy" decoding="async">
           <span class="reel__scrim"></span>
@@ -505,7 +523,7 @@
 <footer class="foot">
   <div class="wrap foot__inner">
     <div class="foot__mark">
-      <img src="img/logo.webp" width="720" height="369"
+      <img src="img/logo.webp" width="420" height="215"
            alt="Mariana Costa Arquitetura + Interiores" loading="lazy" decoding="async">
     </div>
 
