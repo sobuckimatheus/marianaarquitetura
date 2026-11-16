@@ -19,7 +19,11 @@
         ['img/projetos/cura-04.webp', 'Mesa de reunião em tronco maciço sob pendente escultórico'],
         ['img/projetos/cura-05.webp', 'Área externa com spa, deck em madeira e pergolado metálico'],
         ['img/projetos/cura-06.webp', 'Detalhe de estante iluminada na suíte master'],
-        ['img/projetos/cura-08.webp', 'Banheiro da suíte master com box de perfis dourados e bancada dupla']
+        ['img/projetos/cura-08.webp', 'Banheiro da suíte master com box de perfis dourados e bancada dupla'],
+        ['img/projetos/cura-10.webp', 'Suíte com cabeceira estofada, painel verde-oliva e obra de arte'],
+        ['img/projetos/cura-11.webp', 'Banheiro da suíte com bancada em mármore e box de vidro'],
+        ['img/projetos/cura-12.webp', 'Lavabo com cuba de ônix retroiluminada e parede espelhada'],
+        ['img/projetos/cura-13.webp', 'Hall social com nicho iluminado em mármore e marcenaria']
       ]
     },
     essencia: {
@@ -33,7 +37,11 @@
         ['img/projetos/essencia-02.webp', 'Cozinha linear com bancada em quartzito e metais dourados'],
         ['img/projetos/essencia-04.webp', 'Suíte do casal com lustre de cristal e closet espelhado'],
         ['img/projetos/essencia-07.webp', 'Suíte com painel ripado, penteadeira e espelho retroiluminado'],
-        ['img/projetos/essencia-06.webp', 'Lavabo com cuba esculpida e iluminação rebaixada']
+        ['img/projetos/essencia-06.webp', 'Lavabo com cuba esculpida e iluminação rebaixada'],
+        ['img/projetos/essencia-09.webp', 'Suíte com pendente circular, cortina leve e painel ripado'],
+        ['img/projetos/essencia-10.webp', 'Banheiro em tons de azul com bancada ampla e espelho redondo'],
+        ['img/projetos/essencia-11.webp', 'Corredor com marcenaria clássica e nichos iluminados em caramelo'],
+        ['img/projetos/essencia-12.webp', 'Lavabo com revestimento hexagonal, metais dourados e espelho circular']
       ]
     },
     milao: {
@@ -43,7 +51,14 @@
         ['img/projetos/milao-01.webp', 'Escritório com brise de madeira, estações de trabalho e estante iluminada'],
         ['img/projetos/milao-02.webp', 'Sala de atendimento com marcenaria em madeira nobre e quadros emoldurados'],
         ['img/projetos/milao-03.webp', 'Vista do corredor interno do escritório'],
-        ['img/projetos/milao-04.webp', 'Lavabo do escritório com revestimento escuro e cuba suspensa']
+        ['img/projetos/milao-04.webp', 'Lavabo do escritório com revestimento escuro e cuba suspensa'],
+        ['img/projetos/milao-05.webp', 'Estações de trabalho com brise de madeira e marcenaria sob medida'],
+        ['img/projetos/milao-06.webp', 'Copa integrada ao escritório, com boiserie e bancada compacta'],
+        ['img/projetos/milao-07.webp', 'Sala de reunião com estante iluminada e quadros emoldurados'],
+        ['img/projetos/milao-08.webp', 'Mesa de reunião em madeira maciça sob teto ripado'],
+        ['img/projetos/milao-09.webp', 'Vista das estações de trabalho a partir da recepção'],
+        ['img/projetos/milao-10.webp', 'Sala de reunião com parede de pastilhas e iluminação linear'],
+        ['img/projetos/milao-11.webp', 'Lavabo com revestimento escuro, cuba preta e bancada de madeira']
       ]
     },
     meta: {
@@ -54,7 +69,14 @@
         ['img/projetos/meta-02.webp', 'Hall de entrada com espelho orgânico retroiluminado'],
         ['img/projetos/meta-01.webp', 'Cozinha compacta com bancada em pedra e iluminação linear no teto'],
         ['img/projetos/meta-04.webp', 'Quarto com cabeceira estofada e nichos laterais'],
-        ['img/projetos/meta-05.webp', 'Banheiro com revestimento contínuo e bancada suspensa']
+        ['img/projetos/meta-05.webp', 'Banheiro com revestimento contínuo e bancada suspensa'],
+        ['img/projetos/meta-06.webp', 'Painel de TV com marcenaria ripada e prateleiras suspensas'],
+        ['img/projetos/meta-07.webp', 'Sala de jantar com cadeiras clássicas e lustre circular'],
+        ['img/projetos/meta-08.webp', 'Cozinha com iluminação linear embutida e marcenaria clara'],
+        ['img/projetos/meta-09.webp', 'Banheiro com bancada suspensa e revestimento contínuo'],
+        ['img/projetos/meta-10.webp', 'Quarto com nicho iluminado e marcenaria de piso a teto'],
+        ['img/projetos/meta-11.webp', 'Copa com porta de correr ripada e bancada alta'],
+        ['img/projetos/meta-12.webp', 'Cozinha vista da sala, com bancada em pedra e banquetas']
       ]
     }
   };
