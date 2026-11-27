@@ -41,15 +41,13 @@ Busque e substitua em `index.html`:
 
 | Placeholder | Onde aparece |
 |---|---|
-| `5548999999999` | links do WhatsApp (2x no corpo + 1x no menu mobile) |
-| `+554899999999` / `+55 48 99999-9999` | telefone na seção Contato |
 | `https://instagram.com/` | link do Instagram |
 | `marianacostaarquitetura.com.br` | **domínio** — aparece no canonical, og:url, sitemap.xml e robots.txt |
 
 Textos fictícios a revisar com a arquiteta:
 - Números da faixa: 12 anos e 4.200 m² ainda são estimativas
   (150+ projetos é o número real)
-- Áreas, anos e descrições dos 4 projetos
+- Áreas, anos e descrições dos 5 projetos
 - Frase do manifesto (abaixo do hero)
 - Horário de atendimento
 
