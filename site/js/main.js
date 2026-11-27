@@ -126,13 +126,11 @@
      Nav: estado sólido ao sair do hero
      ============================================================ */
   var nav = document.getElementById('nav');
-  var wa = document.querySelector('.wa-float');
   var hero = document.querySelector('.hero');
 
   function onScroll() {
     var past = window.scrollY > (hero ? hero.offsetHeight - 90 : 120);
     nav.classList.toggle('is-stuck', past);
-    if (wa) wa.classList.toggle('is-on', window.scrollY > 600);
   }
 
   var ticking = false;

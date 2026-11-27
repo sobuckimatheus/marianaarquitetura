@@ -994,11 +994,17 @@ body.menu-open .drawer{ opacity:1; visibility:visible; transform:none; }
   background:var(--carvao); color:var(--cal);
   border:1px solid var(--linha-cl);
   border-radius:50%;
-  opacity:0; visibility:hidden; transform:translateY(.75rem);
-  transition:opacity .45s var(--ease), transform .45s var(--ease),
-             visibility .45s, background .35s var(--ease), color .35s var(--ease);
+  /* visível desde o primeiro render: é o canal principal de contato.
+     O fade-in só suaviza a entrada, não condiciona a exibição. */
+  opacity:1; visibility:visible;
+  animation:waIn .5s var(--ease) .35s both;
+  transition:background .35s var(--ease), color .35s var(--ease),
+             transform .35s var(--ease);
 }
-.wa-float.is-on{ opacity:1; visibility:visible; transform:none; }
+@keyframes waIn{
+  from{ opacity:0; transform:translateY(.75rem) scale(.9); }
+  to  { opacity:1; transform:none; }
+}
 .wa-float:hover{ background:var(--rose); color:var(--carvao); }
 .wa-float svg{ width:1.45rem; height:1.45rem; }
 
